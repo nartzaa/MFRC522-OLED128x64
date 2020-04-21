@@ -68,6 +68,13 @@
 #include <Wire.h>
 #include <Adafruit_GFX.h>
 #include <Adafruit_SSD1306.h>   // Setting screen size in library
+/*
+การต่อใช้งาน
+Vcc - > 3.3 / 5 V
+Gnd -> Gnd
+SCL -> A5
+SDA -> A4
+*/
 
 /*
   Instead of a Relay you may want to use a servo. Servos can lock and unlock door locks too
