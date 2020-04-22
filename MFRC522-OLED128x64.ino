@@ -68,6 +68,8 @@
 #include <Wire.h>
 #include <Adafruit_GFX.h>
 #include <Adafruit_SSD1306.h>   // Setting screen size in library
+#define SCREEN_WIDTH 128 // pixel ความกว้าง
+#define SCREEN_HEIGHT 64 // pixel ความสูง 
 /*
 การต่อใช้งาน
 Vcc - > 3.3 / 5 V
@@ -122,7 +124,7 @@ MFRC522 mfrc522(SS_PIN, RST_PIN);
 ///////////////////////////////////////// Setup ///////////////////////////////////
 
 #define OLED_RESET 4
-Adafruit_SSD1306 display(OLED_RESET);
+Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
 
 
 void setup() {
